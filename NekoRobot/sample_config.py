@@ -10,17 +10,17 @@ def get_user_list(config, key):
 class Config(object):
     LOGGER = True
 
-    API_ID = ""
-    API_HASH = ""
-    TOKEN = ""
-    OWNER_ID = ""
-    OWNER_USERNAME = ""
-    SUPPORT_CHAT = ""
-    JOIN_LOGGER = ()
-    EVENT_LOGS = ()
+    API_ID = "20658929"
+    API_HASH = "d0ddf4f6a90d1782e0cb16c01a319cc5"
+    TOKEN = "7230167851:AAFGoVG8Xenx-F9ffPZTOY23EZ3jcWX-Ys4"
+    OWNER_ID = "5702598840"
+    OWNER_USERNAME = "TheRyoman"
+    SUPPORT_CHAT = "Flex_support_Chat"
+    JOIN_LOGGER = "-1002100475470"
+    EVENT_LOGS = "-1002100475470"
 
-    SQLALCHEMY_DATABASE_URI = ""
-    MONGO_DB_URI = ""
+    SQLALCHEMY_DATABASE_URI = "postgres://uf3vmdktbh0r1n:pcb8071af4eaf1e040dad0a46e211165f0d851d1091948d1389df18494affb762@cfls9h51f4i86c.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d3sta0c87hlqc8"
+    MONGO_DB_URI = "mongodb+srv://bankaiaizen891:eC-1654-xGQS-tnm-4iIqpq1@cluster0.dxkqk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     LOAD = []
     NO_LOAD = ["rss"]
     WEBHOOK = False
