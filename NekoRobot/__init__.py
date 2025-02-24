@@ -4,11 +4,15 @@ import sys
 import time
 
 import telegram.ext as tg
-from aiohttp import ClientSession
 from pyrogram import Client, errors
 from Python_ARQ import ARQ
 from telethon import TelegramClient
+from aiohttp import ClientSession
 
+aiohttpsession = ClientSession()
+
+loop = asyncio.get_event_loop()  # Get or create an event loop
+aiohttpsession = ClientSession(loop=loop)  # Use the loop explicitly
 StartTime = time.time()
 
 # enable logging
