@@ -11,11 +11,6 @@ def get_user_list(config, key):
         return json.load(json_file).get(key, [])
 
 
-def get_user_list(config, key):
-    with open("{}/NekoRobot/{}".format(os.getcwd(), config), "r") as json_file:
-        return json.load(json_file)[key]
-
-
 class Config(object):
     LOGGER = True
 
