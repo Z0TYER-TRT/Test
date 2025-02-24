@@ -1,5 +1,14 @@
-import json
 import os
+import json
+
+def get_user_list(config, key):
+    file_path = os.path.join(os.getcwd(), "NekoRobot", config)
+    if not os.path.exists(file_path):
+        print(f"Warning: {file_path} not found. Using empty list.")
+        return []  # Return an empty list instead of crashing
+
+    with open(file_path, "r") as json_file:
+        return json.load(json_file).get(key, [])
 
 
 def get_user_list(config, key):
